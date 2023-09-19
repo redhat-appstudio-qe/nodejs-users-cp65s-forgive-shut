@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-zjog
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-rgqn-tenant/nodejs-users/simple-nodejs-app-zjog@sha256:1871346080813e9f7fc34b0216c82736cdb3bb7c69348ae54a93d2c54ce2e2d8
+        name: my-nodejs
+        resources: {}
+status: {}
